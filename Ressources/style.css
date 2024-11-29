@@ -1,28 +1,52 @@
-html {
+html, body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
 }
 
 /* Header */
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Ensures nav and logo are at opposite ends */
     align-items: center;
-    border-bottom: solid 1px white;
-    background-color: transparent;
-    padding: 0 2.5rem; /* Adding 2.5rem padding to both sides */
-    height: 4rem;
+    background-color: black;
+    padding: 0 3.125rem; /* Adding 2.5rem padding to both sides */
+    height: 5.25rem;
     box-sizing: border-box; 
     z-index: 1000;
 }
 
 header .logo {
-    height: 3.125rem;
+    height: 4rem;
     width: auto;
+}
+
+/* Navigation styles */
+header .nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 3.125rem;
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav li {
+    padding-right: 1.5625rem;
+}
+
+nav a {
+    line-height: 1.5625rem;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    color: #EAE6DB;
+    overflow-x: hidden;
+    text-decoration: none;
 }
