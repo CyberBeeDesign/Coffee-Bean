@@ -1,6 +1,7 @@
 html, body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    letter-spacing: -3%;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -69,7 +70,6 @@ nav a {
     flex-direction: column;
     margin-left: 8.75rem;
     width: 825px;
-
 }
 
 .hero-section h1, p {
@@ -85,12 +85,12 @@ nav a {
 
 .hero-section p {
     line-height: 1.5625rem;
-    letter-spacing: -3%;
     width: 500px;
 }
 
 .hero-section button {
     line-height: 1.5625rem;
+    margin-top: 3.125rem;
     background-color: #EAE6DB;
     color: #41330C ;
     border-radius: 5px;
