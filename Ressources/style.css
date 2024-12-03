@@ -196,3 +196,43 @@ span {
     font-size: 1.5625rem;
     margin-top: 1.875rem;
 }
+
+/* Section 4 */
+
+.section-4 {
+    display: flex;
+    background-color:#41330C;
+    padding: 8.75rem 9.375rem;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.text-box-section-4 {
+    display: flex;
+    flex-direction: column;
+    color: #EAE6DB;
+}
+
+.text-box-section-4 h2 {
+    margin: 0;
+}
+
+.text-box-section-4 p {
+    margin: 3.125rem auto;
+}
+
+.text-box-section-4 button {
+    line-height: 1.5625rem;
+    background-color: #EAE6DB;
+    color: #41330C ;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 200px;
+    height: 60px;
+}
+
+.section-4 img {
+    max-height: 480px;
+    max-width: auto;
+}
