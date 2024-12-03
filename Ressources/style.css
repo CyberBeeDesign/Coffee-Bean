@@ -123,25 +123,26 @@ nav a {
 .section-2 {
     display: flex;
     background-color: #EAE6DB;
+    justify-content: space-around;
     padding: 8.75rem 9.375rem;
     gap: 1.875rem;
     align-items: center;
 }
 
+
 .text-box-section-2 h2 {
-    width: 670px;
     color: #41330C;
     margin-bottom: 3.125rem;
 }
 
 .text-box-section-2 p {
     color: #41330C;
-    width: 500px;
+    max-width: 31.25rem;
 }
 
 .section-2 img {
-    max-height: 480px;
-    max-width: auto;
+    max-height: auto;
+    max-width: 50%;
 }
 
 /* Section 3 */
@@ -149,6 +150,7 @@ nav a {
 .section-3 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     padding: 8.75rem 9.375rem;
     align-content: center;
@@ -202,6 +204,7 @@ span {
 .section-4 {
     display: flex;
     background-color:#41330C;
+    justify-content: space-around;
     padding: 8.75rem 9.375rem;
     gap: 1.875rem;
     align-items: center;
@@ -241,6 +244,7 @@ span {
 
 .section-5 {
     display: flex;
+    justify-content: space-around;
     background-color:white;
     padding: 8.75rem 9.375rem;
     gap: 1.875rem;
