@@ -236,3 +236,103 @@ span {
     max-height: 480px;
     max-width: auto;
 }
+
+/* Section 5 */
+
+.section-5 {
+    display: flex;
+    background-color:white;
+    padding: 8.75rem 9.375rem;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.text-box-section-5 {
+    display: flex;
+    flex-direction: column;
+    color: #41330C;
+}
+
+.text-box-section-5 h2 {
+    margin: 0;
+}
+
+.text-box-section-5 p {
+    margin: 3.125rem auto;
+}
+
+.text-box-section-5 button {
+    line-height: 1.5625rem;
+    background-color: #41330C;
+    color: #EAE6DB ;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 200px;
+    height: 60px;
+}
+
+.section-4 img {
+    max-height: 480px;
+    max-width: auto;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+    padding-top: 3.125rem;
+    padding-bottom: 1.875rem;
+    background-color:#41330C;
+
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3.125rem;
+}
+
+footer .CoffeeBean-logo {
+    margin: 0;
+    height: 4.6875rem;
+    width: auto;
+}
+
+.Social-media {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+footer .img-social {
+    width: 1.875rem; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.contact-block {
+    margin: 0;
+    color: #EAE6DB;
+}
+
+.signature {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color:#EAE6DB;
+    font-family: 'Poppins';
+    font-size: 0.700rem;
+}
+
+.signature a {
+    font-family: 'Poppins';
+    font-size: 0.700rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFC00D;
+    align-items: center;
+}
