@@ -1,11 +1,35 @@
 html, body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     letter-spacing: -3%;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height: 8rem;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 5.625rem;
+    line-height: 5.625rem;
+}
+
+p {
+    line-height: 1.5625rem;
+    margin: 0;
 }
 
 /* Header */
@@ -72,29 +96,103 @@ nav a {
     width: 825px;
 }
 
-.hero-section h1, p {
+.hero-section h1 {
+    margin-bottom: 3.125rem;
     color: #EAE6DB;
 }
 
-.hero-section h1 {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 7.5rem;
-    line-height: 8rem;
-}
-
 .hero-section p {
-    line-height: 1.5625rem;
+    color: #EAE6DB;
     width: 500px;
 }
 
 .hero-section button {
     line-height: 1.5625rem;
-    margin-top: 3.125rem;
     background-color: #EAE6DB;
     color: #41330C ;
+    font-size: 1.125rem;
     border-radius: 5px;
     border-color: transparent;
     width: 200px;
     height: 60px;
+    margin-top: 3.125rem;
+}
+
+/* Section 2 */
+
+.section-2 {
+    display: flex;
+    background-color: #EAE6DB;
+    padding: 8.75rem 9.375rem;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.text-box-section-2 h2 {
+    width: 670px;
+    color: #41330C;
+    margin-bottom: 3.125rem;
+}
+
+.text-box-section-2 p {
+    color: #41330C;
+    width: 500px;
+}
+
+.section-2 img {
+    max-height: 480px;
+    max-width: auto;
+}
+
+/* Section 3 */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 8.75rem 9.375rem;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.text-box-section-3 {
+    max-width: 50rem;
+}
+
+.text-box-section-3 h2 {
+    color: #41330C;
+}
+
+.text-box-section-3 p {
+    color: #41330C;
+}
+
+.our-coffees {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem; 
+    width: 100%;
+}
+
+.coffee-block {
+    flex: 1 1 calc(25% - 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.125rem;
+    box-sizing: border-box;
+}
+
+.coffees-pictures {
+    max-width: 268px;
+    height: auto;
+    margin: 0;
+}
+
+span {
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #41330C;
+    font-size: 1.5625rem;
+    margin-top: 1.875rem;
 }
