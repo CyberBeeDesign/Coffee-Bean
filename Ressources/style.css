@@ -44,6 +44,7 @@ header {
     z-index: 1000;
 }
 
+
 header .logo {
     height: 4rem;
     width: auto;
@@ -338,5 +339,75 @@ footer .img-social {
     text-decoration: none;
     font-weight: bold;
     color: #FFC00D;
+    align-items: center;
+}
+
+/* CONTACT PAGE*/
+
+body.contact-page header {
+    background-color: #41330C;
+}
+
+.left-section img {
+    width: 12.5rem;
+    height: auto;
+}
+
+.hero-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Stretch sections to match the container's height */
+    gap: 1.875rem;
+    padding: 8.75rem 9.375rem; /* Retain your required padding */
+    position: relative; /* Allow full control over sections' dimensions */
+}
+
+.left-section {
+    background-color: #EAE6DB;
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 1rem; /* Optional padding for content inside */
+    box-sizing: border-box; /* Include padding within width/height calculation */
+}
+
+.left-section::before {
+    content: ""; /* Create a pseudo-element for the full-height background */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%; /* Restrict to the left section's width */
+    background-color: #EAE6DB;
+    z-index: -1; /* Place it behind the content */
+}
+
+.right-section {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    padding: 2rem; /* Add some padding for spacing */
+    background-color: transparent; /* Explicitly no background */
+    box-sizing: border-box; /* Include padding within dimensions */
+    gap: 3.125rem;
+}
+
+.right-section h2 {
+    margin: 0;
+    color: #41330C;
+}
+
+.sub-title {
+    font-family: 'Poppins';
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+    margin: 0;
+}
+
+.email {
+    display: flex;
+    gap: 0.5rem;
     align-items: center;
 }
