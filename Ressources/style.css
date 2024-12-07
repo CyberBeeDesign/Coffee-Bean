@@ -45,6 +45,24 @@ p {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    h1 {
+    font-size: 4.0625rem;
+    line-height: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2.8125rem;
+        line-height: 2.8125rem; 
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin: 0;
+    }
+}
+
 /* Header */
 header {
     width: 100%;
@@ -87,8 +105,31 @@ nav a {
     font-size: 1rem;
     color: #EAE6DB;
     overflow-x: hidden;
+    position: relative;
     text-decoration: none;
 }
+
+nav a:hover {
+    color: #EAE6DB;
+}
+
+nav a::after {
+    content: '';
+    height: 2px;
+    width: 100%; /* Ensure the underline spans the full width of the anchor */
+    background: #EAE6DB;
+    position: absolute;
+    left: 0;
+    bottom: -1.5625rem; /* Changed from -15px to 0 to ensure it's visible */
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -108,6 +149,32 @@ nav a {
     nav a {
         line-height: 1.5rem;
         font-size: 0.8rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    header {
+        padding: 0 2rem; 
+        height: 3.75rem;
+    }
+
+    header .nav {
+        padding-left: 1.875rem;
+    }
+
+    nav li {
+        padding-right: 1rem;
+    }
+    
+    nav a {
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+
+    header .logo {
+        height: 2.5rem;
     }
 
   }
@@ -186,6 +253,35 @@ nav a {
 
 }
 
+@media only screen and (max-width: 480px) {
+    .hero-section {
+        background-position: right;
+        height: 45rem;
+        padding: 0 2rem;
+    }
+
+    .text-box {
+        max-width: 25rem;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-section p {
+        max-width: 25rem;
+    }
+
+    .hero-section button {
+        line-height: 1.25rem;
+        font-size: 1rem;
+        width: 150px;
+        height: 50px;
+        margin-top: 1.25rem;
+    }
+
+}
+
 /* Section 2 */
 
 .section-2 {
@@ -229,7 +325,28 @@ nav a {
     }
     
     .section-2 img {
-        max-width: 40%;
+        max-width: 40%
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .section-2 {
+        flex-wrap: wrap;
+        padding: 3.125rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .text-box-section-2 h2 {
+        margin-bottom: 1.875rem;
+    }
+
+    .text-box-section-2 p {
+        width: auto;
+    }
+    
+    .section-2 img {
+        max-width: 60%;
     }
 
 }
@@ -320,6 +437,32 @@ span {
     
 }
 
+@media only screen and (max-width: 480px) {
+    .section-3 {
+        padding: 3.125rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .our-coffees {
+        gap: 1rem; 
+    }
+
+    .coffee-block {
+        margin-top: 1.875rem;
+        overflow:inherit;
+    }
+
+    .coffees-pictures {
+        width: 150px;
+    }
+
+    span {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+}
+
 /* Section 4 */
 
 .section-4 {
@@ -393,6 +536,36 @@ span {
     .section-4 img {
         max-width: 40%;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-4 {
+        flex-direction: column-reverse;
+        padding: 3.125rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .text-box-section-4 h2 {
+        margin: 0;
+    }
+
+    .text-box-section-4 p {
+        margin: 1.875rem auto;
+
+    }
+    
+    .section-4 img {
+        max-width: 60%;
+    }
+
+    .text-box-section-4 button {
+        line-height: 1.25rem;
+        font-size: 1rem;
+        width: 150px;
+        height: 50px;
+        margin-top: 1.25rem;
+    }
+
 }
 
 
@@ -471,6 +644,35 @@ span {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .section-5 {
+        flex-wrap: wrap;
+        padding: 3.125rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .text-box-section-5 h2 {
+        margin: 0;
+    }
+
+    .text-box-section-5 p {
+        margin: 1.875rem auto;
+
+    }
+    
+    .section-5 img {
+        max-width: 60%;
+    }
+
+    .text-box-section-5 button {
+        line-height: 1.25rem;
+        font-size: 1rem;
+        width: 150px;
+        height: 50px;
+        margin-top: 1.25rem;
+    }
+}
+
 /* footer */
 
 footer {
@@ -542,6 +744,33 @@ footer .img-social {
     .Social-media {
         gap: 1.25rem;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    .top-footer {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .Social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .contact-block {
+        width: 50% - 1.25rem;
+    }
+
 }
 
 
@@ -624,5 +853,32 @@ body.contact-page header {
     .right-section {
         padding: 1.25rem;
         gap: 1.875rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-contact {
+        padding: 3.125rem 2rem;
+        gap: 1.25rem;
+        flex-wrap:wrap-reverse;
+    }
+
+    .right-section {
+        padding: 1.25rem;
+        gap: 1.875rem;
+    }
+
+    .left-section img {
+        width: 9rem;
+        height: auto;
+    }
+
+    .right-section {
+        padding: 1.875rem;
+        gap: 1.875rem;
+    }
+    
+    .left-section::before {
+        right: 0;
     }
 }
